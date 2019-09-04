@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ui/list_user.dart';
 
 void main() => runApp(MyApp());
 
@@ -43,6 +44,7 @@ class PageHomeJson extends StatelessWidget {
               textColor: Colors.white,
               onPressed: (){
 
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> ListUser()));
               }, child: Text('Nestedlist Json'),
             ),
           ],
